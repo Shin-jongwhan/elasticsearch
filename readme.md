@@ -8,3 +8,7 @@
 - [\[Elasticsearch\] 입문하기(3) - 다양한 검색 방법 ( Search API )](https://victorydntmd.tistory.com/313)
 - [\[Elasticsearch\] 대량 추가/조회 ( Bulk API, MultiSearch API )](https://victorydntmd.tistory.com/316)
 ### <br/><br/><br/>
+
+## 클러스터 구성
+![image](https://github.com/user-attachments/assets/24d25a6e-03de-4898-9d62-1244d286e784)
+### <br/><br/><br/>
