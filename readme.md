@@ -90,9 +90,27 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 #### ![image](https://github.com/user-attachments/assets/1aa1eab6-e8d5-4e7e-87cb-9f97f1026dd9)
 ### <br/><br/><br/>
 
-## query and filter context
-### query를 할 때의 성격은 2개로 나뉜다. 사실 무슨 구분인지 잘 모르겠다.
+## query DSL, query and filter context
+### query를 할 때의 성격은 2개로 나뉜다.
 #### [Query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/query-filter-context.html)
-- query context : bool이나 완전하게 동일해야 하는 match와 같은 것이다.
-- filter context : term, range clause와 같은 것이 filter context에 속한다.
+- query context : 얼마나 잘 매치가 되었는지 판단하는 score 값이 계산되는 항목이다.
+- filter context : term, range clause와 같은 것이 filter context에 속한다. score 값 계산에 포함하지 않는다. 사용 방법은 mongoDB와 같이 gte, gt, lte, lt와 같이 쓴다.
 #### ![image](https://github.com/user-attachments/assets/3cc12390-2848-498e-89bc-838d811190ba)
+#### ![image](https://github.com/user-attachments/assets/29a93872-b17b-4f45-b983-ddf3730effa2)
+#### ![image](https://github.com/user-attachments/assets/0e2f6903-5d48-48ef-b1ec-dc71606cd375)
+### <br/>
+
+### bool
+- must : bool must 절에 지정된 모든 쿼리가 일치하는 document를 조회
+- should : bool should 절에 지정된 모든 쿼리 중 하나라도 일치하는 document를 조회
+- must_not : bool must_not 절에 지정된 모든 쿼리가 모두 일치하지 않는 document를 조회
+- filter : must와 같이 filter 절에 지정된 모든 쿼리가 일치하는 document를 조회하지만, Filter context에서 실행되기 때문에 score를 무시합니다.
+### <br/>
+
+### filter
+- gte : 크거나 같다.
+- gt : 크다.
+- lte : 작거나 같다.
+- lt : 작다.
+- boost : 쿼리의 boost 값을 셋팅합니다( 기본 값 1.0 ). 같은 쿼리가 있을 때에 중요도를 더 가산하여 검색하는 항목이다. score 값에는 normalization이 들어가기 때문에 크게 반영되지 않는다.<br/>
+  [ex](https://stackoverflow.com/questions/21570963/boosting-in-elasticsearch)
