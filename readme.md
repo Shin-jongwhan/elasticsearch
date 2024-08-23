@@ -108,9 +108,18 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### <br/>
 
 ### filter
+### 위에서 설명
+### <br/>
+
+### range
 - gte : 크거나 같다.
 - gt : 크다.
 - lte : 작거나 같다.
 - lt : 작다.
-- boost : 쿼리의 boost 값을 셋팅합니다( 기본 값 1.0 ). 같은 쿼리가 있을 때에 중요도를 더 가산하여 검색하는 항목이다. score 값에는 normalization이 들어가기 때문에 크게 반영되지 않는다.<br/>
-  [ex](https://stackoverflow.com/questions/21570963/boosting-in-elasticsearch)
+- boost : 쿼리의 boost 값을 셋팅합니다( 기본 값 1.0 ). 같은 쿼리가 있을 때에 중요도를 더 가산하여 검색하는 항목이다. score 값에는 normalization이 들어가기 때문에 크게 반영되지 않는다. [ex](https://stackoverflow.com/questions/21570963/boosting-in-elasticsearch)
+### <br/>
+
+### term
+### 키워드를 조회하는 방법이다.
+### 예를 들어 "Quick Foxes" 라는 문자열이 있을 때 text 타입은 \[quick, foxes\]으로 각각의 단어를 조회할 수 있다.
+### 주의할 점은 "Quick Foxes"라고 검색할 수 없다. 각각의 단어로 검색해야 한다.
