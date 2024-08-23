@@ -27,10 +27,17 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### <br/><br/><br/>
 
 ## 클러스터 구성
+### ES에서 가장 큰 단위가 cluster이고, 그 하위로 node가 있다.
+### node에는 여러 index로 구성된다.
+### index는 primary shard, replica shard로 구성된다. 여기서 primary shard는 필수이고, replica는 없어도 조회는 가능하지만 성능 상 좋지 않다.
+### replica shard는 primary의 복제본이다. 
+### 같은 node 안에 같은 것에서 기인한 primary, replica shard가 있는 건 불가능하다.
 #### [\[Elasticsearch\] 입문하기(1) - Cluster( 클러스터 )](https://victorydntmd.tistory.com/311)
 #### ![image](https://github.com/user-attachments/assets/24d25a6e-03de-4898-9d62-1244d286e784)
 ### <br/><br/><br/>
 
 ## status
+### status가 red면 읽기 / 쓰기가 안 되지만, 한 index에서 조회하는 모든 것이 다 불가능한 건 아니다.
+### index에 있는 primary shard가 5개인데, 그 중 2개가 unnasigned이면 그럼 40% 정도만 조회가 불가능할 것이다.
 #### [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
 #### ![image](https://github.com/user-attachments/assets/fe3a859c-2f9b-4009-af99-eb9b0449df3b)
