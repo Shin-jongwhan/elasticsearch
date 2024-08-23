@@ -7,6 +7,7 @@
 - [\[Elasticsearch\] 입문하기(1) - Cluster( 클러스터 )](https://victorydntmd.tistory.com/311)
 - [\[Elasticsearch\] 입문하기(2) - 기본 API( index, document CRUD )](https://victorydntmd.tistory.com/312)
 - [\[Elasticsearch\] 입문하기(3) - 다양한 검색 방법 ( Search API )](https://victorydntmd.tistory.com/313)
+- [\[Elasticsearch\] 입문하기(4) - 다양한 검색 방법 ( Query DSL )](https://victorydntmd.tistory.com/314)
 - [\[Elasticsearch\] 대량 추가/조회 ( Bulk API, MultiSearch API )](https://victorydntmd.tistory.com/316)
 - [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
 ### <br/>
@@ -22,6 +23,7 @@
 
 ### 공식 문서
 - [Common options](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html)
+- [Query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/query-filter-context.html)
 ### <br/><br/><br/>
 
 
@@ -86,4 +88,11 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### filter_path 여러개 쓰려면 다음과 같이 ','로 구분한다.
 #### [Common options](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html)
 #### ![image](https://github.com/user-attachments/assets/1aa1eab6-e8d5-4e7e-87cb-9f97f1026dd9)
+### <br/><br/><br/>
 
+## query and filter context
+### query를 할 때의 성격은 2개로 나뉜다. 사실 무슨 구분인지 잘 모르겠다.
+#### [Query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/query-filter-context.html)
+- query context : bool이나 완전하게 동일해야 하는 match와 같은 것이다.
+- filter context : term, range clause와 같은 것이 filter context에 속한다.
+#### ![image](https://github.com/user-attachments/assets/3cc12390-2848-498e-89bc-838d811190ba)
