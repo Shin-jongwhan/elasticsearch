@@ -30,6 +30,7 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### ES에서 가장 큰 단위가 cluster이고, 그 하위로 node가 있다.
 ### node에는 여러 index로 구성된다.
 ### index는 primary shard, replica shard로 구성된다. 여기서 primary shard는 필수이고, replica는 없어도 조회는 가능하지만 성능 상 좋지 않다.
+### shard는 index의 데이터가 분산되어 저장된 것이다.
 ### replica shard는 primary의 복제본이다. 
 ### 같은 node 안에 같은 것에서 기인한 primary, replica shard가 있는 건 불가능하다.
 #### [\[Elasticsearch\] 입문하기(1) - Cluster( 클러스터 )](https://victorydntmd.tistory.com/311)
@@ -41,3 +42,12 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### index에 있는 primary shard가 5개인데, 그 중 2개가 unnasigned이면 그럼 40% 정도만 조회가 불가능할 것이다.
 #### [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
 #### ![image](https://github.com/user-attachments/assets/fe3a859c-2f9b-4009-af99-eb9b0449df3b)
+### <br/><br/><br/>
+
+## Index, type, document
+### ES는 다양한 index 간에 같이 조회할 수 있다는 것이 특징이다. MySQL에서는 불가능. 하려면 SQL을 다양한 방식을 통해 작성해야 함(with을 쓴다던지...).
+### 그리고 document를 조회를 하려면 반드시 색인화(id를 지정)해줘야 한다. 그래서 id를 지정해주지 않으면 default 값으로 특정 값이 들어간다.
+### 아마 mongoDB, MySQL 등 다양한 형태의 db를 알고 있다면 익숙한 개념이다.
+- Index : RDBMS의 database와 같은 범주
+- type : RDBMS의 table과 같은 범주
+- document : RDBMS의 row와 같은 범주 
