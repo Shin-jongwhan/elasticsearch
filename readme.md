@@ -27,5 +27,10 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### <br/><br/><br/>
 
 ## 클러스터 구성
-![image](https://github.com/user-attachments/assets/24d25a6e-03de-4898-9d62-1244d286e784)
+#### [\[Elasticsearch\] 입문하기(1) - Cluster( 클러스터 )](https://victorydntmd.tistory.com/311)
+#### ![image](https://github.com/user-attachments/assets/24d25a6e-03de-4898-9d62-1244d286e784)
 ### <br/><br/><br/>
+
+## status
+#### [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
+#### ![image](https://github.com/user-attachments/assets/fe3a859c-2f9b-4009-af99-eb9b0449df3b)
