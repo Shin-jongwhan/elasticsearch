@@ -12,9 +12,11 @@
 ### <br/>
 
 ### API 관련
-- [\[Rest API\] RESTful하게 URL 설계하기](https://velog.io/@yoojkim/Rest-API-RESTful%ED%95%98%EA%B2%8C-URL-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0)
-- [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
-- [\[웹\] HTTP, URL 개념 정리 (REST API / GET, POST, PUT, DELETE )](https://hyunki99.tistory.com/38)
+- 잘 정리 되어 있는 블로그
+  - [\[Rest API\] RESTful하게 URL 설계하기](https://velog.io/@yoojkim/Rest-API-RESTful%ED%95%98%EA%B2%8C-URL-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0)
+- 참고
+  - [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
+  - [\[웹\] HTTP, URL 개념 정리 (REST API / GET, POST, PUT, DELETE )](https://hyunki99.tistory.com/38)
 ### <br/><br/><br/>
 
 
@@ -34,7 +36,7 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### <br/><br/>
 
 ### ES는 기본적으로 API를 사용하기 때문에, API 관련한 블로그를 참고해고 좋다.
-### RESTful
+### RESTful 규칙
 #### ![image](https://github.com/user-attachments/assets/e3708053-ad7f-430d-ae9c-56c204701b28)
 ### <br/><br/><br/>
 
