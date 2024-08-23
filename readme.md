@@ -9,6 +9,11 @@
 - [\[Elasticsearch\] 입문하기(3) - 다양한 검색 방법 ( Search API )](https://victorydntmd.tistory.com/313)
 - [\[Elasticsearch\] 대량 추가/조회 ( Bulk API, MultiSearch API )](https://victorydntmd.tistory.com/316)
 - [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
+### <br/>
+
+### API 관련
+- [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
+- [\[웹\] HTTP, URL 개념 정리 (REST API / GET, POST, PUT, DELETE )](https://hyunki99.tistory.com/38)
 ### <br/><br/><br/>
 
 ## API
@@ -24,6 +29,11 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### 이외에 status 체크 등등 모든 것들이 API를 통해 출력할 수 있다.
 ### update, delete, insert도 동일하고 각각 이용하기 위한 주소의 규칙이 있다(나머지는 블로그 글 참고).
 #### [\[Elasticsearch\] 입문하기(2) - 기본 API( index, document CRUD )](https://victorydntmd.tistory.com/312)
+### <br/><br/>
+
+### ES는 기본적으로 API를 사용하기 때문에, API 관련한 블로그를 참고해고 좋다.
+#### [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
+#### 
 ### <br/><br/><br/>
 
 ## 클러스터 구성
@@ -45,9 +55,14 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### <br/><br/><br/>
 
 ## Index, type, document
+####  [\[Elasticsearch\] 입문하기(2) - 기본 API( index, document CRUD )](https://victorydntmd.tistory.com/312)
 ### ES는 다양한 index 간에 같이 조회할 수 있다는 것이 특징이다. MySQL에서는 불가능. 하려면 SQL을 다양한 방식을 통해 작성해야 함(with을 쓴다던지...).
 ### 그리고 document를 조회를 하려면 반드시 색인화(id를 지정)해줘야 한다. 그래서 id를 지정해주지 않으면 default 값으로 특정 값이 들어간다.
 ### 아마 mongoDB, MySQL 등 다양한 형태의 db를 알고 있다면 익숙한 개념이다.
 - Index : RDBMS의 database와 같은 범주
 - type : RDBMS의 table과 같은 범주
-- document : RDBMS의 row와 같은 범주 
+- document : RDBMS의 row와 같은 범주
+### <br/><br/>
+
+### API 호출에서 document에 대한 주소는 다음과 같이 path 하위 구분으로 나뉜다.
+#### ![image](https://github.com/user-attachments/assets/c3958480-1663-4fe3-afd4-37310c162413)
