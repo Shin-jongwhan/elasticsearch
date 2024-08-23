@@ -12,9 +12,11 @@
 ### <br/>
 
 ### API 관련
+- [\[Rest API\] RESTful하게 URL 설계하기](https://velog.io/@yoojkim/Rest-API-RESTful%ED%95%98%EA%B2%8C-URL-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0)
 - [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
 - [\[웹\] HTTP, URL 개념 정리 (REST API / GET, POST, PUT, DELETE )](https://hyunki99.tistory.com/38)
 ### <br/><br/><br/>
+
 
 ## API
 ### ES는 API로 호출하여 사용한다는 것이 특징이다.
@@ -32,9 +34,10 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### <br/><br/>
 
 ### ES는 기본적으로 API를 사용하기 때문에, API 관련한 블로그를 참고해고 좋다.
-#### [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
-#### 
+### RESTful
+#### ![image](https://github.com/user-attachments/assets/e3708053-ad7f-430d-ae9c-56c204701b28)
 ### <br/><br/><br/>
+
 
 ## 클러스터 구성
 ### ES에서 가장 큰 단위가 cluster이고, 그 하위로 node가 있다.
@@ -47,12 +50,14 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 #### ![image](https://github.com/user-attachments/assets/24d25a6e-03de-4898-9d62-1244d286e784)
 ### <br/><br/><br/>
 
+
 ## status
 ### status가 red면 읽기 / 쓰기가 안 되지만, 한 index에서 조회하는 모든 것이 다 불가능한 건 아니다.
 ### index에 있는 primary shard가 5개인데, 그 중 2개가 unnasigned이면 그럼 40% 정도만 조회가 불가능할 것이다.
 #### [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
 #### ![image](https://github.com/user-attachments/assets/fe3a859c-2f9b-4009-af99-eb9b0449df3b)
 ### <br/><br/><br/>
+
 
 ## Index, type, document
 ####  [\[Elasticsearch\] 입문하기(2) - 기본 API( index, document CRUD )](https://victorydntmd.tistory.com/312)
