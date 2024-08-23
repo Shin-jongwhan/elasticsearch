@@ -18,6 +18,10 @@
 - 참고
   - [REST API - GET, POST,PUT,DELETE](https://velog.io/@dbsgywls9855/REST-API-GET-POST-PUT-DELETE)
   - [\[웹\] HTTP, URL 개념 정리 (REST API / GET, POST, PUT, DELETE )](https://hyunki99.tistory.com/38)
+### <br/>
+
+### 공식 문서
+- [Common options](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html)
 ### <br/><br/><br/>
 
 
@@ -73,7 +77,13 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 - Index : RDBMS의 database와 같은 범주
 - type : RDBMS의 table과 같은 범주
 - document : RDBMS의 row와 같은 범주
-### <br/><br/>
+### <br/>
 
 ### API 호출에서 document에 대한 주소는 다음과 같이 path 하위 구분으로 나뉜다.
 #### ![image](https://github.com/user-attachments/assets/c3958480-1663-4fe3-afd4-37310c162413)
+### <br/>
+
+### filter_path 여러개 쓰려면 다음과 같이 ','로 구분한다.
+#### [Common options](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html)
+#### ![image](https://github.com/user-attachments/assets/1aa1eab6-e8d5-4e7e-87cb-9f97f1026dd9)
+
