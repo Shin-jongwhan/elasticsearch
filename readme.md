@@ -12,6 +12,7 @@
 ### <br/>
 
 ### API 관련
+#### elasticsearch가 RESTful API는 아니다.
 - 잘 정리 되어 있는 블로그
   - [\[Rest API\] RESTful하게 URL 설계하기](https://velog.io/@yoojkim/Rest-API-RESTful%ED%95%98%EA%B2%8C-URL-%EC%84%A4%EA%B3%84%ED%95%98%EA%B8%B0)
 - 참고
@@ -35,9 +36,12 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 #### [\[Elasticsearch\] 입문하기(2) - 기본 API( index, document CRUD )](https://victorydntmd.tistory.com/312)
 ### <br/><br/>
 
-### ES는 기본적으로 API를 사용하기 때문에, API 관련한 블로그를 참고해고 좋다.
-### RESTful 규칙
-#### ![image](https://github.com/user-attachments/assets/e3708053-ad7f-430d-ae9c-56c204701b28)
+### ES는 기본적으로 API를 사용하기 때문에, API 관련한 블로그를 참고해고 좋다(위 API 관련 블로그 링크 참고).
+### 여기서 method에 따라 header, body가 있는 경우가 있고 없는 경우가 있는데, 각 method의 사용 가능한 형태를 참고하면 좋다.
+- GET : path, parameter 사용 가능
+- PUT : header, body 사용 가능(안 해도 됨). path, parameter 사용 가능. 리소스 갱신, 생성(갱신이 기본형태이고, 해당 리소스가 없으면 생성 => POST와의 차이점)
+- POST : header, body 사용 가능(안 해도 됨). path, parameter 사용 가능
+- DELETE : path, parameter 사용 가능
 ### <br/><br/><br/>
 
 
