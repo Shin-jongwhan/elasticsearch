@@ -123,3 +123,26 @@ curl -XGET http://localhost:9200/_cluster/health?pretty=true
 ### 키워드를 조회하는 방법이다.
 ### 예를 들어 "Quick Foxes" 라는 문자열이 있을 때 text 타입은 \[quick, foxes\]으로 각각의 단어를 조회할 수 있다.
 ### 주의할 점은 "Quick Foxes"라고 검색할 수 없다. 각각의 단어로 검색해야 한다.
+```
+{
+  "query": {
+    "terms": {
+      "address": ["street", "place", "avenue"]
+    }
+  }
+}
+```
+### <br/>
+
+### regexp 
+### 정규 표현식 사용
+```
+{
+    "query": {
+        "regexp":{
+            "address": ".*street"
+        }
+    }
+}
+```
+### <br/><br/><br/>
