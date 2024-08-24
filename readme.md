@@ -12,6 +12,7 @@
 - [\[Elasticsearch\] 입문하기(5) - 검색 결과 가공하기](https://victorydntmd.tistory.com/315)
 - [\[Elasticsearch\] 대량 추가/조회 ( Bulk API, MultiSearch API )](https://victorydntmd.tistory.com/316)
 - [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
+- [[Elastic Search] 기본 개념과 특징(장단점)](https://jaemunbro.medium.com/elastic-search-%EA%B8%B0%EC%B4%88-%EC%8A%A4%ED%84%B0%EB%94%94-ff01870094f0)
 ### <br/>
 
 ### API 관련
