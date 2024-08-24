@@ -1,6 +1,7 @@
 ### 240822
 # Elasticsearch
 ### 써야 할 건 아니고 공부 목적으로 관련 블로그들을 읽어보는 중이다. AWS에서도 종종 나왔기 때문에 어떤 기능이 있는지 궁금했다.
+### elasticsearch의 가장 중요한 특징은 '검색 엔진'이라는 것이다. 그리고 물론 database의 성격을 가지고 있다.
 ### 여기서는 elasticsearch를 ES라고 줄여서 부르겠다.
 - [Elasticsearch란 - Minseop Jeong](https://velog.io/@msjeong97/Elasticsearch%EB%9E%80)
 - [\[Elasticsearch\] 기본 개념잡기](https://victorydntmd.tistory.com/308)
@@ -25,6 +26,11 @@
 ### 공식 문서
 - [Common options](https://www.elastic.co/guide/en/elasticsearch/reference/current/common-options.html)
 - [Query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/query-filter-context.html)
+### <br/>
+
+### 기타
+### 검색 엔진에 대한 문제점 해결을 위해 ES를 사용한다고 한다.
+- [ElasticSearch 1화: 왜 해야하고 무엇을 해야 하는가?](https://medium.com/elecle-bike/elasticsearch-1%ED%99%94-%EC%99%9C-%ED%95%B4%EC%95%BC%ED%95%98%EA%B3%A0-%EB%AC%B4%EC%97%87%EC%9D%84-%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94%EA%B0%80-47a21f25508c)
 ### <br/><br/><br/>
 
 
