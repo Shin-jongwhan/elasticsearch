@@ -8,6 +8,7 @@
 - [\[Elasticsearch\] 입문하기(2) - 기본 API( index, document CRUD )](https://victorydntmd.tistory.com/312)
 - [\[Elasticsearch\] 입문하기(3) - 다양한 검색 방법 ( Search API )](https://victorydntmd.tistory.com/313)
 - [\[Elasticsearch\] 입문하기(4) - 다양한 검색 방법 ( Query DSL )](https://victorydntmd.tistory.com/314)
+- [\[Elasticsearch\] 입문하기(5) - 검색 결과 가공하기](https://victorydntmd.tistory.com/315)
 - [\[Elasticsearch\] 대량 추가/조회 ( Bulk API, MultiSearch API )](https://victorydntmd.tistory.com/316)
 - [Elasticsearch - status 바로 알기](https://brunch.co.kr/@alden/43)
 ### <br/>
